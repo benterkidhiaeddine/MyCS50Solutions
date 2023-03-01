@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Your cart</h1>
+    <ul>
+    {% for book in books %}
+        <li>{{book["title"]}}</li>
+    {% endfor %}
+    </ul>
+    <p><a href="/">Return to order page</a></p>
+
+{% endblock %}

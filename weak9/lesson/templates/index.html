@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+    {% block body %}
+    <!--the get method shows the key value pairs in the url , while the post method dosen't show it-->
+        <form action ="./greet" method="post">
+            <input type="text" autocomplete="off" autofocus name="name" placeholder="Name">
+            <input type="submit">
+
+        </form>
+    {% endblock %}
+
+

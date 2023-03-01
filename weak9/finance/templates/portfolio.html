@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<h1>
+    Current holdings
+</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Stock</th>
+        <th scope="col">Number of shares</th>
+        <th scope="col">Current price of stock</th>
+        <th scope="col">Total value of owned stocks</th>
+      </tr>
+    </thead>
+      {% if informations != [] %}
+      <tbody>
+        {% for info in informations %}
+        <tr>
+          <td>{{info["symbol"] }}</td>
+          <td>{{info["quantity"] }}</td>
+          <td>{{info["price"] | usd }}</td>
+          <td>{{info["total"] | usd }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% else %}
+      <tbody>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </tbody>
+      {% endif %}
+
+
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Total cash</th>
+            <th scope="col">Networth</th>
+        </tr>
+    </thead>
+    <tbody>
+            <td>{{funds | usd}}</td>
+            <td>{{networth | usd}}</td>
+    </tbody>
+
+</table>
+
+{% endblock %}

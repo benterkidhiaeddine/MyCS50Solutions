@@ -1,0 +1,126 @@
+*,::before,::after{
+    font-family: 'Josefin sans',sans-serif;
+    padding: 0px;
+    margin:0px;
+}
+
+
+.navbar-brand span{
+    color:#485778;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/pexels-wendy-wei-14430249.jpg);/*Photo by Wendy Wei: https://www.pexels.com/photo/white-and-brown-concrete-building-on-sea-under-white-clouds-14430249/*/
+    background-size: cover;
+    background-position: center;
+   
+}
+.header:has(.wrapper.Introduction.column){
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 40px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+img[src="./images/314894392_494775695753920_2051043233272990922_n.jpg"]{
+    border : 2px solid ;
+    height : 70vh;
+    width:auto;
+}
+.Introduction{
+ background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid transparent;
+  z-index: 2;
+  
+}
+
+.Introduction h4{
+    color: black;
+
+}
+
+.Introduction h2{
+    color:black;
+}
+
+.about .wrapper{
+    flex-direction: column;
+
+}
+
+.about p{
+    width : 70%;
+}
+
+.footer{
+    background-color: #485778;
+    display: flex;
+    flex-direction: column;
+    height : 10vh;
+    width:100%;
+    align-items: center;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width : 100%;
+    gap:10px;
+    padding-left: 0px;
+    margin:0px;
+
+}
+
+.icons li{
+    list-style: none;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+#social .icons img{
+    height : 20px;
+    width:auto;
+
+}
+.icons img{
+    height : 30px;
+    width:auto;
+
+}
+#projects .icons img{
+    height : 50px;
+    width:auto;
+}
+
+#hobbies .icons img{
+    height : 50px;
+    width:auto;
+}
+
+.copyright{
+    font-size: 8px;
+}

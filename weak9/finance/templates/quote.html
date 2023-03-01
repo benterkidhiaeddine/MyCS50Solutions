@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Quote" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Look up</button>
+    </form>
+
+    <!--Display the quote  information if the symbol exist -->
+    {% if result %}
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{result["name"]}}</td>
+            <td>{{result["symbol"]}}</td>
+            <td>{{result["price"] | usd }}</td>
+          </tr>
+        </tbody>
+      </table>
+    {% endif %}
+
+{% endblock %}

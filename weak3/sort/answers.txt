@@ -1,0 +1,24 @@
+sort1 uses: bubble sort
+
+How do you know?:
+when we used sort 1 on random text then on sorted text the speed in which the sort was done has improved
+dramaticaly ,and we know that bubble sort has a time complexity in the best case scenario O(n) (the case of an already sorted list)
+is smaller than the worst case scenario O(n^2)
+
+sort2 uses: merge sort
+
+How do you know?:
+because when we tested it for the random txt files ,it was the fastest sort this is in accordance
+with the time complexity of each sort the selection sort and the bubble sort have bigger time complexities O(n^2)
+in the worse case scenario which is a random list of numbers that is unsorted while the merge sort
+has a time complexity in the worse case scenario of O(n*logn)
+
+sort3 uses: selection sort
+
+How do you know?:
+the execution time of sort3 on the three diffrent type of lists be it random reversed or sorted was the same
+and no improvment has been observed which in accordance with the equality of time complexity of this algorithm
+in both the best and worst cas scenarios
+
+
+

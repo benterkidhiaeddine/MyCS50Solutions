@@ -1,0 +1,1 @@
+in this folder you will find al the sql queries used to solve the cs50 task movies as part of the cs50 online course
